@@ -14,6 +14,16 @@ app.use("/user", UserRoutes);
 //Auth Routes
 app.use("/auth", AuthRoutes);
 
+app.use((err, req, res, next) => {
+  const statusCode = err.statusCode || 500;
+  const message = err.message || "Intrernal Server Error";
+  res.status(statusCode).json({
+    success: false,
+    statusCode,
+    message,
+  });
+});
+
 app.use((req, res, next) => {
   console.log(`${req.method} =====> URL: ${req.url}`);
   next();
