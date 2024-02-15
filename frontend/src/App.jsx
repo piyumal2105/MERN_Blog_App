@@ -3,15 +3,15 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 //Pages
-import Home from "./pages/Home";
-import AboutUs from "./pages/AboutUs";
-import Dashboard from "./pages/Dashboard";
-import Projects from "./pages/Projects";
-import SignIn from "./pages/Signin";
-import SignUp from "./pages/Signup";
+import Home from "./pages/HomePage/HomePage";
+import AboutUs from "./pages/AboutUsPage/AboutUsPage";
+import Dashboard from "./pages/DashboardPage/DashboardPage";
+import Projects from "./pages/ProjectsPage/ProjectsPage";
+import SignIn from "./pages/SignInPage/SigninPage";
+import SignUp from "./pages/SignUpPage/SignupPage";
 
 //Components
-import Header from "./components/Header";
+import Header from "./components/Header/Header";
 
 function App() {
   return (
