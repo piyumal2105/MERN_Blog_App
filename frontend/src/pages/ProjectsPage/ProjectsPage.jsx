@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 
-function Projects() {
+function ProjectsPage() {
   return (
     <>
       <div>Projects</div>
@@ -9,4 +9,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default ProjectsPage;

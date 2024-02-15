@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 
-function SignUp() {
+function SignUpPage() {
   return (
     <>
       <div>SignUp</div>
@@ -9,4 +9,4 @@ function SignUp() {
   );
 }
 
-export default SignUp;
+export default SignUpPage;

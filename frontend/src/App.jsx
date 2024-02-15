@@ -3,12 +3,12 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 //Pages
-import Home from "./pages/HomePage/HomePage";
-import AboutUs from "./pages/AboutUsPage/AboutUsPage";
-import Dashboard from "./pages/DashboardPage/DashboardPage";
-import Projects from "./pages/ProjectsPage/ProjectsPage";
-import SignIn from "./pages/SignInPage/SigninPage";
-import SignUp from "./pages/SignUpPage/SignupPage";
+import HomePage from "./pages/HomePage/HomePage";
+import AboutUsPage from "./pages/AboutUsPage/AboutUsPage";
+import DashboardPage from "./pages/DashboardPage/DashboardPage";
+import ProjectsPage from "./pages/ProjectsPage/ProjectsPage";
+import SignInPage from "./pages/SignInPage/SigninPage";
+import SignUpPage from "./pages/SignUpPage/SignupPage";
 
 //Components
 import Header from "./components/Header/Header";
@@ -18,12 +18,12 @@ function App() {
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/aboutus" element={<AboutUs />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/signin" element={<SignIn />} />
-        <Route path="/signup" element={<SignUp />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/aboutus" element={<AboutUsPage />} />
+        <Route path="/dashboard" element={<DashboardPage />} />
+        <Route path="/projects" element={<ProjectsPage />} />
+        <Route path="/signin" element={<SignInPage />} />
+        <Route path="/signup" element={<SignUpPage />} />
       </Routes>
     </BrowserRouter>
   );

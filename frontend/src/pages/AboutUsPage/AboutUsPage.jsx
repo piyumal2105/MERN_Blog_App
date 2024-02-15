@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 
-function AboutUs() {
+function AboutUsPage() {
   return (
     <>
       <div>AboutUs</div>
@@ -9,4 +9,4 @@ function AboutUs() {
   );
 }
 
-export default AboutUs;
+export default AboutUsPage;

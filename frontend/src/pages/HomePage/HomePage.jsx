@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 
-function Home() {
+function HomePage() {
   return (
     <>
       <div>Home</div>
@@ -9,4 +9,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default HomePage;

@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 
-function Dashboard() {
+function DashboardPage() {
   return (
     <>
       <div>Dashboard</div>
@@ -9,4 +9,4 @@ function Dashboard() {
   );
 }
 
-export default Dashboard;
+export default DashboardPage;
