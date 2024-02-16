@@ -10,9 +10,9 @@ app.use(express.json());
 const PORT = process.env.PORT || 6001;
 
 //User Routes
-app.use("/user", UserRoutes);
+app.use("/api/user", UserRoutes);
 //Auth Routes
-app.use("/auth", AuthRoutes);
+app.use("/api/auth", AuthRoutes);
 
 app.use((err, req, res, next) => {
   const statusCode = err.statusCode || 500;
