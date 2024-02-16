@@ -1,13 +1,13 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-import { Label, TextInput } from "flowbite-react";
+import { Button, Label, TextInput } from "flowbite-react";
 import { Link } from "react-router-dom";
 
 function SignUpPage() {
   return (
     <>
       <div className="min-h-screen mt-20">
-        <div className="flex p-3 max-w-3xl mx-auto flex-col md:flex-row md:items-center">
+        <div className="flex p-3 max-w-3xl mx-auto flex-col md:flex-row md:items-center gap-5">
           {/* left */}
           <div className="flex-1">
             <Link to="/" className="font-bold dark:text-white text-4xl">
@@ -40,7 +40,21 @@ function SignUpPage() {
                   id="password"
                 />
               </div>
+              <Button
+                className="mt-5"
+                gradientDuoTone="purpleToPink"
+                outline
+                type="submit"
+              >
+                Sign Up
+              </Button>
             </form>
+            <div className="flex gap-2 text-sm- mt-5">
+              <span>Have an account</span>{" "}
+              <Link to="/signin" className="text-blue-500">
+                Sign In
+              </Link>
+            </div>
           </div>
         </div>
       </div>
