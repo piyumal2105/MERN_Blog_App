@@ -12,6 +12,7 @@ import SignUpPage from "./pages/SignUpPage/SignupPage";
 
 //Components
 import Header from "./components/Header/Header";
+import FooterComponent from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/signin" element={<SignInPage />} />
         <Route path="/signup" element={<SignUpPage />} />
       </Routes>
+      <FooterComponent />
     </BrowserRouter>
   );
 }
