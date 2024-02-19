@@ -8,6 +8,7 @@ import {
   signInSuccess,
   signInFailure,
 } from "../../app/user/user.Slice.js";
+import OAuth from "../../components/OAuth/OAuth.jsx";
 
 function SignInPage() {
   const [formData, setFormData] = useState({});
@@ -97,6 +98,7 @@ function SignInPage() {
                   "Sign In"
                 )}
               </Button>
+              <OAuth />
             </form>
             <div className="flex gap-2 text-sm- mt-5">
               <span>Dont Have an account</span>{" "}
