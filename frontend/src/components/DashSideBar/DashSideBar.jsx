@@ -26,6 +26,7 @@ function DashSideBar() {
                 icon={HiUser}
                 label={"User"}
                 labelColor="dark"
+                as="button"
               >
                 Profile
               </Sidebar.Item>
