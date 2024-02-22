@@ -13,6 +13,7 @@ import SignUpPage from "./pages/SignUpPage/SignupPage";
 //Components
 import Header from "./components/Header/Header";
 import FooterComponent from "./components/Footer/Footer";
+import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 
 function App() {
   return (
@@ -21,10 +22,12 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/aboutus" element={<AboutUsPage />} />
-        <Route path="/dashboard" element={<DashboardPage />} />
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/signin" element={<SignInPage />} />
         <Route path="/signup" element={<SignUpPage />} />
+        <Route element={<PrivateRoute />}>
+          <Route path="/dashboard" element={<DashboardPage />} />
+        </Route>
       </Routes>
       <FooterComponent />
     </BrowserRouter>
